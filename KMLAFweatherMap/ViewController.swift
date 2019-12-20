@@ -34,12 +34,13 @@ class ViewController: UIViewController {
         self.afWeatherMapView.weatherMapView.frame = view.bounds
         self.view.addSubview(afWeatherMapView.weatherMapView)
         self.afWeatherMapView.delegate = self
+        self.afWeatherMapView.dataSource = self
         
         // FIXME: Not Working with radar type
      //   self.afWeatherMapView.addSource(forLayerType: .airQuality)
         
         
-        self.afWeatherMapView.addSources(forLayerTypes: [.airQuality])
+        self.afWeatherMapView.addSources(forLayerTypes: [.radar])
         self.afWeatherMapView.mapViewDelegate = self
     }
     
@@ -64,7 +65,7 @@ class ViewController: UIViewController {
         // Position the map so that all overlays and annotations are visible on screen.
         if let mapView = self.afWeatherMapView.strategy.mapView as? MKMapView {
             mapView.setVisibleMapRect(flyTo, animated: true)
-            mapView.delegate = self
+          //  mapView.delegate = self
         }
     }
     
@@ -73,12 +74,17 @@ class ViewController: UIViewController {
 
 extension ViewController: MKMapViewDelegate {
   func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-   if let renderer = self.kmlParser.rendererForOverlay(overlay) {
+      if let renderer = self.kmlParser.rendererForOverlay(overlay) {
           return renderer
-   } else if overlay is AWFMKTileOverlay {
-        return MKOverlayRenderer(overlay: overlay)
+      } else if let strategy = afWeatherMapView.strategy as? AWFAppleMapStrategy {
+          // set mapViewDelegate to nil to prevent recursively calling this method from the map strategy
+          // and reassign it after grabbing the default overlay renderer from the strategy
+          afWeatherMapView.mapViewDelegate = nil
+          let renderer = strategy.mapView(mapView, rendererFor: overlay)
+          afWeatherMapView.mapViewDelegate = self
+          return renderer
       }
-    return MKOverlayRenderer(overlay: overlay)
+      return MKOverlayRenderer(overlay: overlay)
   }
 }
 
@@ -86,4 +92,21 @@ extension ViewController: AWFWeatherMapDelegate {
     func weatherMap(_ weatherMap: AWFWeatherMap, didAddLayerForType layerType: AWFMapLayer) {
         print("layer type added \(layerType)")
     }
+}
+
+
+extension ViewController: AWFWeatherMapDataSource {
+    func weatherMap(_ weatherMap: AWFWeatherMap, requestOptionsForLayer layerType: AWFMapLayer) -> AWFWeatherRequestOptions? {
+        return nil
+    }
+    
+    func weatherMap(_ weatherMap: AWFWeatherMap, calloutViewFor annotation: AWFAnnotation) -> UIView? {
+        return nil
+    }
+    
+    func weatherMapCalloutContentView(forLongPress weatherMap: AWFWeatherMap) -> UIView? {
+        return nil
+    }
+    
+    
 }
