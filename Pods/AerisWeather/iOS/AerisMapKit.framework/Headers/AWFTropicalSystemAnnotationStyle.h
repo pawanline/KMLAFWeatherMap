@@ -1,0 +1,29 @@
+//
+//  AWFTropicalSystemAnnotationStyle.h
+//  AerisMapKit
+//
+//  Created by Nicholas Shipes on 8/16/18.
+//  Copyright © 2018 AerisWeather, LLC. All rights reserved.
+//
+
+#import <AerisMapKit/AerisMapKit.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+typedef NSString *AWFTropicalSystemAnnotationType NS_TYPED_EXTENSIBLE_ENUM;
+FOUNDATION_EXPORT AWFTropicalSystemAnnotationType const AWFTropicalSystemAnnotationTypeLow;
+FOUNDATION_EXPORT AWFTropicalSystemAnnotationType const AWFTropicalSystemAnnotationTypeDepression;
+FOUNDATION_EXPORT AWFTropicalSystemAnnotationType const AWFTropicalSystemAnnotationTypeStorm;
+FOUNDATION_EXPORT AWFTropicalSystemAnnotationType const AWFTropicalSystemAnnotationTypeCat1;
+FOUNDATION_EXPORT AWFTropicalSystemAnnotationType const AWFTropicalSystemAnnotationTypeCat2;
+FOUNDATION_EXPORT AWFTropicalSystemAnnotationType const AWFTropicalSystemAnnotationTypeCat3;
+FOUNDATION_EXPORT AWFTropicalSystemAnnotationType const AWFTropicalSystemAnnotationTypeCat4;
+FOUNDATION_EXPORT AWFTropicalSystemAnnotationType const AWFTropicalSystemAnnotationTypeCat5;
+FOUNDATION_EXPORT AWFTropicalSystemAnnotationType const AWFTropicalSystemAnnotationTypeTyphoon;
+FOUNDATION_EXPORT AWFTropicalSystemAnnotationType const AWFTropicalSystemAnnotationTypeSuperTyphoon;
+
+@interface AWFTropicalSystemAnnotationStyle : AWFAnnotationStyle <AWFGroupedStyle>
+
+@end
+
+NS_ASSUME_NONNULL_END

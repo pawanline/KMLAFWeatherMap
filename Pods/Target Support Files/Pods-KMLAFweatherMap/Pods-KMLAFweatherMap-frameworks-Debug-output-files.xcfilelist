@@ -1,0 +1,8 @@
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AerisCore.framework
+${DWARF_DSYM_FOLDER_PATH}/AerisCore.framework.dSYM
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AerisCoreUI.framework
+${DWARF_DSYM_FOLDER_PATH}/AerisCoreUI.framework.dSYM
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AerisWeatherKit.framework
+${DWARF_DSYM_FOLDER_PATH}/AerisWeatherKit.framework.dSYM
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AerisMapKit.framework
+${DWARF_DSYM_FOLDER_PATH}/AerisMapKit.framework.dSYM

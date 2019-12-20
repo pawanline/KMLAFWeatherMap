@@ -1,0 +1,9 @@
+${PODS_ROOT}/Target Support Files/Pods-KMLAFweatherMap-KMLAFweatherMapUITests/Pods-KMLAFweatherMap-KMLAFweatherMapUITests-frameworks.sh
+${PODS_ROOT}/AerisWeather/iOS/AerisCore.framework
+${PODS_ROOT}/AerisWeather/iOS/AerisCore.framework.dSYM
+${PODS_ROOT}/AerisWeather/iOS/AerisCoreUI.framework
+${PODS_ROOT}/AerisWeather/iOS/AerisCoreUI.framework.dSYM
+${PODS_ROOT}/AerisWeather/iOS/AerisWeatherKit.framework
+${PODS_ROOT}/AerisWeather/iOS/AerisWeatherKit.framework.dSYM
+${PODS_ROOT}/AerisWeather/iOS/AerisMapKit.framework
+${PODS_ROOT}/AerisWeather/iOS/AerisMapKit.framework.dSYM

@@ -1,0 +1,25 @@
+PODS:
+  - AerisWeather (3.2.1):
+    - AerisWeather/Data (= 3.2.1)
+  - AerisWeather/Core (3.2.1)
+  - AerisWeather/CoreUI (3.2.1):
+    - AerisWeather/Core
+  - AerisWeather/Data (3.2.1):
+    - AerisWeather/CoreUI
+  - AerisWeather/Maps (3.2.1):
+    - AerisWeather/Data
+
+DEPENDENCIES:
+  - AerisWeather
+  - AerisWeather/Maps
+
+SPEC REPOS:
+  trunk:
+    - AerisWeather
+
+SPEC CHECKSUMS:
+  AerisWeather: c2c5454d74299ef796dd3b889deabba17dee3dcc
+
+PODFILE CHECKSUM: 624da32b18adee4e6ee4ef47ca537895c2bfd27d
+
+COCOAPODS: 1.8.4

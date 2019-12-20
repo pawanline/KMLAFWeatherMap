@@ -1,0 +1,6 @@
+framework module Pods_KMLAFweatherMapTests {
+  umbrella header "Pods-KMLAFweatherMapTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
