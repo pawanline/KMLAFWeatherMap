@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		45BCE8A321F608E915339D07 /* Pods_KMLAFweatherMap_KMLAFweatherMapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7307BA2B6C2C55139C9C3F68 /* Pods_KMLAFweatherMap_KMLAFweatherMapUITests.framework */; };
 		6F3E1223FB61D14B9AAB32CD /* Pods_KMLAFweatherMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26377F279C2EE59DB05181D0 /* Pods_KMLAFweatherMap.framework */; };
+		D37F595123B5E2F6002217E9 /* MyWeatherAppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37F595023B5E2F6002217E9 /* MyWeatherAppConfig.swift */; };
 		D3D4222823AC93F200ADA652 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D4222723AC93F200ADA652 /* AppDelegate.swift */; };
 		D3D4222A23AC93F200ADA652 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D4222923AC93F200ADA652 /* SceneDelegate.swift */; };
 		D3D4222C23AC93F200ADA652 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D4222B23AC93F200ADA652 /* ViewController.swift */; };
@@ -47,6 +48,7 @@
 		7307BA2B6C2C55139C9C3F68 /* Pods_KMLAFweatherMap_KMLAFweatherMapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KMLAFweatherMap_KMLAFweatherMapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF71839D17D89E3A1EB7E8D /* Pods-KMLAFweatherMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KMLAFweatherMap.release.xcconfig"; path = "Target Support Files/Pods-KMLAFweatherMap/Pods-KMLAFweatherMap.release.xcconfig"; sourceTree = "<group>"; };
 		A2E410BC5A184EE5A943E47D /* Pods-KMLAFweatherMap-KMLAFweatherMapUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KMLAFweatherMap-KMLAFweatherMapUITests.debug.xcconfig"; path = "Target Support Files/Pods-KMLAFweatherMap-KMLAFweatherMapUITests/Pods-KMLAFweatherMap-KMLAFweatherMapUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D37F595023B5E2F6002217E9 /* MyWeatherAppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWeatherAppConfig.swift; sourceTree = "<group>"; };
 		D3D4222423AC93F200ADA652 /* KMLAFweatherMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KMLAFweatherMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D4222723AC93F200ADA652 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3D4222923AC93F200ADA652 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				D3D4223023AC93F500ADA652 /* Assets.xcassets */,
 				D3D4223223AC93F500ADA652 /* LaunchScreen.storyboard */,
 				D3D4223523AC93F500ADA652 /* Info.plist */,
+				D37F595023B5E2F6002217E9 /* MyWeatherAppConfig.swift */,
 			);
 			path = KMLAFweatherMap;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 			files = (
 				D3D4222C23AC93F200ADA652 /* ViewController.swift in Sources */,
 				D3D4222823AC93F200ADA652 /* AppDelegate.swift in Sources */,
+				D37F595123B5E2F6002217E9 /* MyWeatherAppConfig.swift in Sources */,
 				D3D4222A23AC93F200ADA652 /* SceneDelegate.swift in Sources */,
 				D3D4225A23ACA02A00ADA652 /* KMLParser.swift in Sources */,
 			);
