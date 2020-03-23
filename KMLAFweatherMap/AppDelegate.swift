@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        AerisWeather.start(withApiKey: "mhvY4HpF1fxngA4MdIZCr", secret: "M9jKNRG5JJj1PeWAA4UGrdMm00WuWcjeNTMUUrvb")
+        AerisWeather.start(withApiKey: "gRlJirZBz0MtsubYC9N28", secret: "q1x7MAtEhIjHulON0pncIugZWg7ljuQ0T7i61KhG")
         return true
     }
 

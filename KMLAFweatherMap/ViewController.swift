@@ -25,6 +25,10 @@ class ViewController: UIViewController {
         
         self.configureMap()
         self.kmlSetup()
+        
+        self.afWeatherMapView.timeline.start()
+        
+     
     }
 
     // MARK: - Helper methods

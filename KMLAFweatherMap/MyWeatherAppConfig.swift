@@ -16,9 +16,7 @@ class MyWeatherAppConfig: AWFWeatherMapConfig {
     override init() {
         super.init()
         
-        self.refreshInterval = 1 * AWFSecondInterval
-        self.animationEnabled = true
-        self.showsCountyLines = true
-        self.tileOverlayLevel = .aboveRoads
+        self.timelineEndOffsetFromNow = 0
+        self.timelineStartOffsetFromNow = -2 * AWFHourInterval
     }
 }
