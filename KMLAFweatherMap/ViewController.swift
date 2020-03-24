@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         self.configureMap()
         self.kmlSetup()
         
-        self.afWeatherMapView.timeline.start()
+        
         
      
     }
@@ -75,9 +75,9 @@ class ViewController: UIViewController {
     
     @IBAction func overlayLoopChanged(_ sender: UISwitch) {
         if sender.isOn {
-            afWeatherMapView.enableAutoRefresh()
+            afWeatherMapView.startAnimating()
         } else {
-            afWeatherMapView.disableAutoRefresh()
+            afWeatherMapView.stopAnimating()
         }
     }
     
